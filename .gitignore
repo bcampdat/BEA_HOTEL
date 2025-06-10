@@ -1,0 +1,16 @@
+# Archivos de clase
+**/*.class
+# Archivos JAR
+**/*.jar
+# Carpeta de salida de Maven
+target/
+# Carpeta de salida de Gradle
+build/
+# Archivos de caché
+**/out/
+# Archivos de log
+**/log/
+# Archivos de configuración
+**/settings.gradle
+# Archivos de perfil
+**/maven.properties
