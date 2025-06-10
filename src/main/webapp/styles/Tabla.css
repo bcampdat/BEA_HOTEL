@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+th, td {
+	border: 1px solid var(--colorPrincipalClaro);
+	padding: 8px;
+	text-align: left;
+}
+
+th {
+	background-color: var(--colorPrincipalClaro);
+	color: var(--textoNegro);
+}
+
+a {
+	color: var(--colorContrasteClaro);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--colorContraste);
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+	.contenedor-columnas {
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* ----------------- CUADRÍCULA PRODUCTOS ----------------- */
+
+.cuadricula {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 10px 10px;
+	grid-auto-flow: row;
+	grid-template-areas: ". . . .";
+}
+
+.producto {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto;
+	gap: 10px 0px;
+	grid-auto-flow: row;
+	grid-template-areas: 
+		"prod_cabecera" 
+		"prod_cuerpo" 
+		"prod_pie";
+
+	padding: 5px;
+	border-radius: 3px;
+	background-color: var(--colorPrincipalClaro);
+	box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.48);
+}
+
+.prod_cabecera {
+	grid-area: prod_cabecera;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.prod_cabecera h2:first-child {
+	width: 100%;
+}
+
+.prod_cuerpo {
+	grid-area: prod_cuerpo;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.prod_cuerpo p {
+	padding-left: 10px;
+}
+
+.prod_pie {
+	grid-area: prod_pie;
+}
+
+/* ----------------- SERVICIOS HOTEL ----------------- */
+
+.servicios-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 2rem;
+	padding: 2rem;
+}
+
+.servicio {
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	overflow: hidden;
+	text-align: center;
+	padding: 1rem;
+	background-color: #fdfdfd;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+.servicio:hover {
+	transform: translateY(-5px);
+}
+
+.servicio img {
+	max-width: 100%;
+	border-radius: 8px;
+}
+
+.servicio h3 {
+	margin-top: 1rem;
+	font-size: 1.3rem;
+	color: #1e90ff;
+}
+
+.servicio i {
+	color: #1e90ff;
+	margin-right: 0.5rem;
+}
+
+.servicio p {
+	font-size: 0.95rem;
+	color: #444;
+}
