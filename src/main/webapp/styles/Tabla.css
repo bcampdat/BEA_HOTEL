@@ -18,15 +18,7 @@ th {
 	color: var(--textoNegro);
 }
 
-a {
-	color: var(--colorContrasteClaro);
-	text-decoration: none;
-}
 
-a:hover {
-	color: var(--colorContraste);
-	text-decoration: underline;
-}
 
 @media screen and (max-width: 1000px) {
 	.contenedor-columnas {

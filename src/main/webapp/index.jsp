@@ -20,8 +20,8 @@ System.out.println(listaHabitaciones);
 <title>Habitaciones</title>
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="styles/styleCONCRETO.css">
-<link rel="stylesheet" href="styles/styleGENERAL.css">
+<link rel="stylesheet" href="styles/style_GENERAL.css">
+<link rel="stylesheet" href="styles/style_CONCRETO">
 <link rel="stylesheet" href="styles/Tabla.css">
 </head>
 <body>
@@ -31,7 +31,6 @@ System.out.println(listaHabitaciones);
 
 	<main>
 		<section>
-
 			<h2>Lista de Habitaciones</h2>
 			<table>
 				<thead>
@@ -42,7 +41,7 @@ System.out.println(listaHabitaciones);
 						<th>Precio</th>
 						<th>Nº Camas</th>
 						<th>Exterior</th>
-						
+
 					</tr>
 				</thead>
 				<tbody>
